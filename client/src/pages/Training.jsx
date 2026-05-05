@@ -1,16 +1,41 @@
 import React from "react";
 import Navbar from "../components/Navbar";
+import Footer from "@/components/Footer";
+import Hero_Training from "@/components/training/Hero_Training";
+import Question from "../assets/question.png";
+import Anybody from "../assets/anybody.png";
+import { FaCheckCircle } from "react-icons/fa";
+import { Bluetooth } from "lucide-react";
 
 const Training = () => {
   return (
     <div>
       <Navbar />
-      <main className="pt-28 px-6 md:px-20">
-        <h1 className="text-3xl font-bold">Training</h1>
-        <p className="mt-4 text-gray-700">
-          This is a placeholder Training page.
-        </p>
-      </main>
+      <section><Hero_Training /></section>
+      <section className="bg-green-900 py-5 px-5 gap-5 text-white flex flex-col justify-center items-center">
+        <div className="flex md:w-2/3 justify-between items-center">
+          <h4 className="md:text-3xl text-2xl">Who Can Attend?</h4>
+          <img src={Question} alt="question" className="md:w-50 w-40 h-40 md:h-50 object-contain"/>
+        </div>
+        <div className="flex md:w-2/3 justify-between gap-10 md:gap-0 items-center">
+          <img src={Anybody} alt="anybody" className="md:w-50  w-40 h-40 md:h-50 object-contain rounded-full"/>
+          <h4 className="md:text-3xl text-2xl">Anybody Interested!</h4>
+        </div>
+        <div className="pt-5">
+          <h2 className="text-4xl font-bold mb-5">Focus Area</h2>
+          <ul className="space-y-4 text-sm md:text-base text-center text-white">
+            <li className="flex items-center gap-2"><FaCheckCircle  /> Integrated Farming</li>
+            <li className="flex items-center gap-2"><FaCheckCircle  /> Cliemate-Smart Agriculture</li>
+            <li className="flex items-center gap-2"><FaCheckCircle  /> Agribusiness Basics</li>
+            
+          </ul>
+        </div>
+      </section>
+      <div className="flex justify-center items-center">
+      <button className="bg-green-900 border border-green-900 text-ceneter text-lg font-bold text-white rounded-sm hover:bg-white hover:text-green-900 transition-colors duration-300 cursor-pointer px-5 py-2 my-10">Get In Touch</button>
+      </div>
+      
+      <Footer />
     </div>
   );
 };

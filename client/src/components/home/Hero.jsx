@@ -42,7 +42,7 @@ const Hero = () => {
           Building Sustainable Livelihoods Through Integrated Agricultural Prodcution & Eco-Tourism
         </p>
 
-        <div className="flex md:flex-row flex-col gap-5 md:gap-10 py-10">
+        <div className="flex md:flex-row flex-col gap-5 md:gap-10 py-10 text-center">
           <Link
             to="/about"
             className="bg-green-900 border border-green-900 font-semibold text-lg hover:bg-white hover:text-green-800 text-white px-4 py-2 rounded-sm transition-colors duration-300 shadow cursor-pointer"
@@ -52,7 +52,7 @@ const Hero = () => {
 
           <Link
             to="/services"
-            className="bg-white border border-green-p00 font-semibold text-lg hover:bg-green-900 hover:text-white text-green-900 px-4 py-2 rounded-sm transition-colors duration-300 shadow cursor-pointer"
+            className="bg-white border border-green-900 font-semibold text-lg hover:bg-green-900 hover:text-white text-green-900 px-4 py-2 rounded-sm transition-colors duration-300 shadow cursor-pointer"
           >
             View Services
           </Link>

@@ -1,14 +1,18 @@
 import React from "react";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
+import Hero_about from "../components/about/Hero_about";
+import VMG from "../components/about/VMG";
+import Sustainability from "../components/about/Sustainability";
 
 const About = () => {
   return (
     <div>
       <Navbar />
-      <main className="pt-28 px-6 md:px-20">
-        <h1 className="text-3xl font-bold">About</h1>
-        <p className="mt-4 text-gray-700">This is a placeholder About page.</p>
-      </main>
+      <section><Hero_about /></section>
+      <section><VMG /></section>
+      <section><Sustainability /></section>
+      <Footer />
     </div>
   );
 };
