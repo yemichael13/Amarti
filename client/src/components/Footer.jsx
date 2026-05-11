@@ -1,8 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import Logo_2 from "../assets/amarti_logo_2.png";
-import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FaFacebook, FaInstagram } from "react-icons/fa";
 import { FaTiktok } from "react-icons/fa6";
+import { FaTelegramPlane } from "react-icons/fa";
 
 
 function Footer() {
@@ -67,8 +68,8 @@ function Footer() {
             <h4 className="font-bold underline text-lg">Find Us</h4>
             <a href="https://web.facebook.com/profile.php?id=61589387694921&sk=about" target="_blank" rel="noopener noreferrer" className="cursor-pointer transition-transform duration-300 hover:-translate-y-2 flex gap-2 text-white"><FaFacebook /></a>
             <a href="https://instagram.com/aamaartii_farm" target="_blank" rel="noopener noreferrer" className="cursor-pointer transition-transform duration-300 hover:-translate-y-2 flex gap-2 text-white"><FaInstagram /></a>
-            <a href="" target="_blank" rel="noopener noreferrer" className="cursor-pointer transition-transform duration-300 hover:-translate-y-2 flex gap-2 text-white"><FaLinkedin /></a>
             <a href="https://tiktok.com/@aamaartii_farm" target="_blank" rel="noopener noreferrer" className="cursor-pointer transition-transform duration-300 hover:-translate-y-2 flex gap-2 text-white"><FaTiktok /></a>
+            <a href="https://t.me/aamaartii_farm" target="_blank" rel="noopener noreferrer" className="cursor-pointer transition-transform duration-300 hover:-translate-y-2 flex gap-2 text-white"><FaTelegramPlane /></a>
           </div>
         </div>
       </div>

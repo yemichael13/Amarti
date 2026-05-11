@@ -25,6 +25,7 @@ if (!$devBypass && !isset($_SESSION['admin'])) {
 $title   = $_POST['title'] ?? '';
 $content = $_POST['content'] ?? '';
 $excerpt = $_POST['excerpt'] ?? '';
+$is_published = isset($_POST['is_published']) ? (int)$_POST['is_published'] : 0;
 
 if (!$title || !$content) {
     http_response_code(400);
@@ -36,11 +37,11 @@ if (!$title || !$content) {
 $slug = strtolower(trim(preg_replace('/[^A-Za-z0-9-]+/', '-', $title)));
 
 $stmt = $pdo->prepare("
-    INSERT INTO posts (title, slug, content, excerpt)
-    VALUES (?, ?, ?, ?)
+    INSERT INTO posts (title, slug, content, excerpt, is_published)
+    VALUES (?, ?, ?, ?, ?)
 ");
 try {
-    $stmt->execute([$title, $slug, $content, $excerpt]);
+    $stmt->execute([$title, $slug, $content, $excerpt, $is_published]);
     $postId = $pdo->lastInsertId();
 
     echo json_encode([
