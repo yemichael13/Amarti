@@ -37,8 +37,8 @@ const Hero = () => {
 
       {/* Content layer */}
       <div className="hero-content relative z-10 flex flex-col w-full md:w-3/5 h-full justify-center items-center md:items-start px-4 md:px-10 md:mt-20">
-      <h1 className="md:text-8xl text-5xl text-white font-black">AAMAARTII</h1>
-        <p className="text-white md:text-xl text-sm font-medium pt-6">
+      <h1 className="md:text-8xl text-6xl text-white font-black">AAMAARTII</h1>
+        <p className="text-white md:text-xl text-lg max-w-3/4 text-center md:text-start font-medium pt-6">
           Building Sustainable Livelihoods Through Integrated Agricultural Prodcution & Eco-Tourism
         </p>
 

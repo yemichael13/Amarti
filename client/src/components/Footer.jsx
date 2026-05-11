@@ -1,9 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import Logo_2 from "../assets/aamaartii_logo2.png";
-import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
+import Logo_2 from "../assets/amarti_logo_2.png";
+import { FaFacebook, FaInstagram } from "react-icons/fa";
 import { FaTiktok } from "react-icons/fa6";
-import { FaXTwitter } from "react-icons/fa6";
+import { FaTelegramPlane } from "react-icons/fa";
+
 
 function Footer() {
   return (
@@ -52,24 +53,23 @@ function Footer() {
             {/* Quick Links */}
           <div className="flex flex-col gap-2">
             <h4 className="font-bold text-lg">Quick Links</h4>
-            <Link to="#" className="text-white text-sm hover:text-white/70">Home</Link>
-            <Link to="#" className="text-white text-sm hover:text-white/70">About</Link>
-            <Link to="#" className="text-white text-sm hover:text-white/70">Services</Link>
-            <Link to="#" className="text-white text-sm hover:text-white/70">Eco-Tourism</Link>
-            <Link to="#" className="text-white text-sm hover:text-white/70">Training</Link>
-            <Link to="#" className="text-white text-sm hover:text-white/70">Posts & Updates</Link>
-            <Link to="#" className="text-white text-sm hover:text-white/70">Contact</Link>
-            <Link to="#" className="text-white text-sm hover:text-white/70">FAQ</Link>
+            <Link to="/" className="text-white text-sm hover:text-white/70">Home</Link>
+            <Link to="/about" className="text-white text-sm hover:text-white/70">About</Link>
+            <Link to="/services" className="text-white text-sm hover:text-white/70">Services</Link>
+            <Link to="eco-tourism" className="text-white text-sm hover:text-white/70">Eco-Tourism</Link>
+            <Link to="/training" className="text-white text-sm hover:text-white/70">Training</Link>
+            <Link to="news" className="text-white text-sm hover:text-white/70">Posts & Updates</Link>
+            <Link to="/contact" className="text-white text-sm hover:text-white/70">Contact</Link>
+            <Link to="/faq" className="text-white text-sm hover:text-white/70">FAQ</Link>
           </div>
 
           {/* Social Links */}
           <div className="flex flex-col gap-5 items-start md:items-end">
             <h4 className="font-bold underline text-lg">Find Us</h4>
-            <a href="#" className="cursor-pointer transition-transform duration-300 hover:-translate-y-2 flex gap-2 text-white"><FaFacebook /></a>
-            <a href="#" className="cursor-pointer transition-transform duration-300 hover:-translate-y-2 flex gap-2 text-white"><FaInstagram /></a>
-            <a href="#" className="cursor-pointer transition-transform duration-300 hover:-translate-y-2 flex gap-2 text-white"><FaLinkedin /></a>
-            <a href="#" className="cursor-pointer transition-transform duration-300 hover:-translate-y-2 flex gap-2 text-white"><FaTiktok /></a>
-            <a href="#" className="cursor-pointer transition-transform duration-300 hover:-translate-y-2 flex gap-2 text-white"><FaXTwitter /></a>
+            <a href="https://web.facebook.com/profile.php?id=61589387694921&sk=about" target="_blank" rel="noopener noreferrer" className="cursor-pointer transition-transform duration-300 hover:-translate-y-2 flex gap-2 text-white"><FaFacebook /></a>
+            <a href="https://instagram.com/aamaartii_farm" target="_blank" rel="noopener noreferrer" className="cursor-pointer transition-transform duration-300 hover:-translate-y-2 flex gap-2 text-white"><FaInstagram /></a>
+            <a href="https://tiktok.com/@aamaartii_farm" target="_blank" rel="noopener noreferrer" className="cursor-pointer transition-transform duration-300 hover:-translate-y-2 flex gap-2 text-white"><FaTiktok /></a>
+            <a href="https://t.me/aamaartii_farm" target="_blank" rel="noopener noreferrer" className="cursor-pointer transition-transform duration-300 hover:-translate-y-2 flex gap-2 text-white"><FaTelegramPlane /></a>
           </div>
         </div>
       </div>

@@ -1,1 +1,6 @@
 config
+migrations
+uploads
+check_admin.php
+migrate.php
+set_admin_password.php
