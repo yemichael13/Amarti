@@ -1,4 +1,5 @@
 <?php
+session_start();
 require __DIR__ . "/../config/db.php";
 
 // CORS: reflect origin to support requests with credentials
@@ -13,18 +14,26 @@ if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
     exit;
 }
 
+$isAdmin = isset($_SESSION['admin']);
+
 // optionally filter by id or slug
 $id = $_GET['id'] ?? null;
 $slug = $_GET['slug'] ?? null;
 
 if ($id || $slug) {
     if ($id) {
-        $stmt = $pdo->prepare("SELECT id, title, slug, excerpt, content, created_at, is_published FROM posts WHERE id = ? LIMIT 1");
-        $stmt->execute([$id]);
+        $sql = "SELECT id, title, slug, excerpt, content, created_at, is_published FROM posts WHERE id = ?";
+        $params = [$id];
     } else {
-        $stmt = $pdo->prepare("SELECT id, title, slug, excerpt, content, created_at, is_published FROM posts WHERE slug = ? LIMIT 1");
-        $stmt->execute([$slug]);
+        $sql = "SELECT id, title, slug, excerpt, content, created_at, is_published FROM posts WHERE slug = ?";
+        $params = [$slug];
     }
+    if (!$isAdmin) {
+        $sql .= " AND is_published = 1";
+    }
+    $sql .= " LIMIT 1";
+    $stmt = $pdo->prepare($sql);
+    $stmt->execute($params);
 
     $post = $stmt->fetch();
     if (!$post) {
@@ -42,12 +51,12 @@ if ($id || $slug) {
     exit;
 }
 
-$stmt = $pdo->query(
-    "SELECT id, title, slug, excerpt, content, created_at, is_published
-    FROM posts
-    WHERE is_published = 1
-    ORDER BY created_at DESC"
-);
+$sql = "SELECT id, title, slug, excerpt, content, created_at, is_published FROM posts";
+if (!$isAdmin) {
+    $sql .= " WHERE is_published = 1";
+}
+$sql .= " ORDER BY created_at DESC";
+$stmt = $pdo->query($sql);
 
 $posts = $stmt->fetchAll();
 
