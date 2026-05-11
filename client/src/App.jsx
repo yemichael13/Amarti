@@ -7,6 +7,7 @@ import Services from "./pages/Services";
 import EcoTourism from "./pages/Eco-Tourism";
 import Training from "./pages/Training";
 import Contact from "./pages/Contact";
+import FAQ from "./pages/FAQ";
 
 
 
@@ -34,6 +35,7 @@ const AnimatedRoutes = () => {
         <Route path="/eco-tourism" element={<EcoTourism />} />
         <Route path="/training" element={<Training />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/faq" element={<FAQ />} />
 
         {/* Fallback */}
         <Route path="*" element={<Home />} />

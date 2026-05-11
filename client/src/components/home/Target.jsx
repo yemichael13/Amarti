@@ -4,6 +4,7 @@ import Farmer from "../../assets/farmer,student.jpg";
 import Project from "../../assets/project_owner.jpg";
 import Peri from "../../assets/peri-urban.jpg";
 import Youth from "../../assets/youth.png";
+import { FaCheckCircle } from "react-icons/fa";
 
 const Target = () => {
   return (
@@ -42,11 +43,11 @@ const Target = () => {
       {/* Outputs Section */}
       <h2 className="text-center text-4xl font-bold">Expected Outputs</h2>
       <div className="mt-10 pb-10 px-5 max-w-4xl">
-        <p className="font-semibold md:text-xl text-sm">- Increased household income and diversified livelihoods</p>
-        <p className="font-semibold md:text-xl text-sm">- Improved nutrition for partner households and urban dwellers</p>
-        <p className="font-semibold md:text-xl text-sm">- Increased supply of fish, poultry, fruits, and vegetables to urban markets</p>
-        <p className="font-semibold md:text-xl text-sm">- Employment creation for youth and women</p>
-        <p className="font-semibold md:text-xl text-sm">- Functional integrated agro‑eco‑tourism site</p>
+        <p className="font-semibold md:text-xl flex items-center  gap-5 text-sm"><FaCheckCircle className="text-green-700" /> Increased household income and diversified livelihoods</p>
+        <p className="font-semibold md:text-xl flex items-center  gap-5 text-sm"><FaCheckCircle className="text-green-700" /> Improved nutrition for partner households and urban dwellers</p>
+        <p className="font-semibold md:text-xl flex items-center  gap-5 text-sm"><FaCheckCircle className="text-green-700" /> Increased supply of fish, poultry, fruits, and vegetables to urban markets</p>
+        <p className="font-semibold md:text-xl flex items-center  gap-5 text-sm"><FaCheckCircle className="text-green-700" /> Employment creation for youth and women</p>
+        <p className="font-semibold md:text-xl flex items-center  gap-5 text-sm"><FaCheckCircle className="text-green-700" /> Functional integrated agro‑eco‑tourism site</p>
       </div>
     </div>
   );

@@ -19,6 +19,9 @@ const Hero_about = () => {
       {/* Dark overlay */}
       <div className="absolute inset-0 bg-black/40"></div>
 
+      {/* Fade to white at bottom */}
+      <div className="absolute inset-x-0 bottom-0 h-40 bg-linear-to-t from-white to-transparent"></div>
+
       {/* Content */}
       <div className="relative z-10 max-w-6xl text-center px-6 md:px-5">
         <h1 className="text-4xl md:text-8xl font-black font-serif text-white mb-6">
