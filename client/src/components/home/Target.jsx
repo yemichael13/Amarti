@@ -14,29 +14,29 @@ const Target = () => {
       {/* Cards Section */}
       <div className="flex flex-col md:flex-row md:flex-wrap justify-center items-center gap-6 py-10 w-full max-w-6xl">
         {/* Card */}
-        <div className="flex flex-col border border-green-900 rounded-md px-5 py-10 w-full md:w-60 text-center justify-center items-center bg-gradient-to-b from-green-900 to-green-700 transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+        <div className="flex flex-col border border-green-900 rounded-md px-5 py-10 w-full md:w-60 text-center justify-center items-center  transition-transform duration-300 hover:scale-105 hover:shadow-xl">
           <img src={Project} alt="project owner" className="w-32 h-32 rounded-full mb-5" />
-          <h4 className="text-white text-lg md:text-xl font-semibold">Project Owner Households</h4>
+          <h4 className="text-green-900 text-lg md:text-xl font-semibold">Project Owner Households</h4>
         </div>
 
-        <div className="flex flex-col border border-green-900 rounded-md px-5 py-10 w-full md:w-60 text-center justify-center items-center bg-gradient-to-b from-green-900 to-green-700 transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+        <div className="flex flex-col border border-green-900 rounded-md px-5 py-10 w-full md:w-60 text-center justify-center items-center  transition-transform duration-300 hover:scale-105 hover:shadow-xl">
           <img src={Youth} alt="Youth" className="w-32 h-32 rounded-full mb-5" />
-          <h4 className="text-white text-lg md:text-xl font-semibold">Youth and Woman Groups</h4>
+          <h4 className="text-green-900 text-lg md:text-xl font-semibold">Youth and Woman Groups</h4>
         </div>
 
-        <div className="flex flex-col border border-green-900 rounded-md px-5 py-10 w-full md:w-60 text-center justify-center items-center bg-gradient-to-b from-green-900 to-green-700 transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+        <div className="flex flex-col border border-green-900 rounded-md px-5 py-10 w-full md:w-60 text-center justify-center items-center  transition-transform duration-300 hover:scale-105 hover:shadow-xl">
           <img src={Peri} alt="urban & peri-urban" className="w-32 h-32 rounded-full mb-5" />
-          <h4 className="text-white text-lg md:text-xl font-semibold">Urban and Peri-Urban Consumers</h4>
+          <h4 className="text-green-900 text-lg md:text-xl font-semibold">Urban and Peri-Urban Consumers</h4>
         </div>
 
-        <div className="flex flex-col border border-green-900 rounded-md px-5 py-10 w-full md:w-60 text-center justify-center items-center bg-gradient-to-b from-green-900 to-green-700 transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+        <div className="flex flex-col border border-green-900 rounded-md px-5 py-10 w-full md:w-60 text-center justify-center items-center  transition-transform duration-300 hover:scale-105 hover:shadow-xl">
           <img src={Farmer} alt="farmer" className="w-32 h-32 rounded-full mb-5" />
-          <h4 className="text-white text-lg md:text-xl font-semibold">Farmers, Students and Researchers</h4>
+          <h4 className="text-green-900 text-lg md:text-xl font-semibold">Farmers, Students and Researchers</h4>
         </div>
 
-        <div className="flex flex-col border border-green-900 rounded-md px-5 py-10 w-full md:w-60 text-center justify-center items-center bg-gradient-to-b from-green-900 to-green-700 transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+        <div className="flex flex-col border border-green-900 rounded-md px-5 py-10 w-full md:w-60 text-center justify-center items-center  transition-transform duration-300 hover:scale-105 hover:shadow-xl">
           <img src={Eco_Tourism} alt="eco-tourism" className="w-32 h-32 rounded-full mb-5" />
-          <h4 className="text-white text-lg md:text-xl font-semibold">Eco-Tourism</h4>
+          <h4 className="text-green-900 text-lg md:text-xl font-semibold">Eco-Tourism</h4>
         </div>
       </div>
 

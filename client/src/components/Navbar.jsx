@@ -57,7 +57,7 @@ const Navbar = () => {
         aria-controls="mobile-menu"
       >
         {/* Simple hamburger icon */}
-        <div className="space-y-1 ">
+        <div className="space-y-1 bg-green-900 p-2 rounded-sm">
           <span className="block w-6 h-0.5 bg-white"></span>
           <span className="block w-6 h-0.5 bg-white"></span>
           <span className="block w-6 h-0.5 bg-white"></span>

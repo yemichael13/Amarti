@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { FaPlus, FaTimes } from "react-icons/fa";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import PageMotion from "../components/motion/PageMotion";
+import Reveal from "../components/motion/Reveal";
 
 const FAQ = () => {
   const [activeIndex, setActiveIndex] = useState(null);
@@ -46,7 +48,9 @@ const FAQ = () => {
 
   return (
     <div>
+      <PageMotion>
       <Navbar />
+      <Reveal>
       <div className="px-6 py-10 mt-16 max-w-4xl mx-auto">
         <h2 className="text-4xl md:text-6xl font-bold text-center mb-10">
           Frequently Asked Questions
@@ -85,7 +89,11 @@ const FAQ = () => {
           ))}
         </div>
       </div>
+      </Reveal>
+      <Reveal>
       <Footer />
+      </Reveal>
+      </PageMotion>
     </div>
   );
 };

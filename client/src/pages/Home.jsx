@@ -9,38 +9,61 @@ import Partners from "../components/home/Partners";
 import Latest_Posts from "@/components/home/Latest_Posts";
 import Contact from "../components/home/Contact";
 import Footer from "../components/Footer";
+import PageMotion from "../components/motion/PageMotion";
+import Reveal from "../components/motion/Reveal";
 
 const Home = () => {
     return(
         <div>
             <Navbar />
-            <section>
+            <PageMotion>
+                <section>
+                    <Reveal>
                 <Hero />
+                </Reveal>
             </section>
             <section>
+                <Reveal>
                 <Who_We_Are />
+                </Reveal>
             </section>
             <section>
+                <Reveal>
                 <Our_System />
+                </Reveal>
             </section>
             <section>
+                <Reveal>
                 <Target />
+                </Reveal>
             </section>
             <section>
+                <Reveal>
                 <Impact />
+                </Reveal>
             </section>
             <section>
+                <Reveal>
                 <Partners />
+                </Reveal>   
             </section>
             <section>
+                <Reveal>
                 <Latest_Posts />
+                </Reveal>
             </section>
             <section>
+                <Reveal>
                 <Contact />
+                </Reveal>
             </section>
             <section>
+                <Reveal>
                 <Footer />
+                </Reveal>
             </section>
+            </PageMotion>
+            
         </div>
     )
 }

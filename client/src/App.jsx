@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
+import { AnimatePresence } from "framer-motion";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import News from "./pages/News";
@@ -33,7 +34,7 @@ const AnimatedRoutes = () => {
   const location = useLocation();
 
   return (
-
+    <AnimatePresence mode="wait">
       <Routes location={location} key={location.pathname}>
         {/* Public Routes */}
         <Route path="/" element={<Home />} />
@@ -74,7 +75,7 @@ const AnimatedRoutes = () => {
 
         <Route path="*" element={<Home />} />
       </Routes>
-
+    </AnimatePresence>
   );
 };
 

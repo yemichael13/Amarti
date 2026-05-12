@@ -38,9 +38,9 @@ const Latest_Posts = () => {
   };
 
   return (
-    <div className="py-20 bg-green-800">
+    <div className="py-20 bg-green-900">
       <Reveal>
-        <h1 className="text-center text-white text-4xl md:text-6xl font-bold mb-12">Latest news</h1>
+        <h1 className="text-center text-white text-4xl md:text-6xl font-bold mb-12">Latest News</h1>
       </Reveal>
 
       {loading && <div className="text-center text-white text-xl">Loading…</div>}
@@ -89,7 +89,7 @@ const Latest_Posts = () => {
             <div className="text-center mt-10">
               <Link
                 to="/news"
-                className="inline-block bg-white text-green-800 font-semibold px-6 py-3 rounded-lg hover:bg-green-100 transition-colors duration-300"
+                className="inline-block bg-white text-green-800 font-semibold px-6 py-3 rounded-lg  transition-colors duration-300"
               >
                 View all news
               </Link>

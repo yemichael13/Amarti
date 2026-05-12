@@ -10,8 +10,8 @@ function Contact() {
     <div className='flex flex-col gap-10 py-5'>
         <h2 className='md:text-4xl text-2xl font-black text-center'>Let's Build Sustainable Livelihoods Together</h2>
         <div className='flex justify-center items center md:gap-20 gap-5'>
-            <Link className='text-lg rounded-sm bg-green-900 text-white font-semibold px-6 py-2 hover:text-green-900 hover:bg-white transition-color duration-300 border border-green-900 cursor-pointer'>Become A Partner</Link>
-            <Link className='text-lg rounded-sm bg-white text-green-900 font-semibold px-6 py-2 hover:text-white hover:bg-green-900 transition-color duration-300 border border-green-900 cursor-pointer'>Plan A Visit</Link>
+            <Link to="/contact" className='text-lg rounded-sm bg-green-900 text-white font-semibold px-6 py-2 hover:text-green-900 hover:bg-white transition-color duration-300 border border-green-900 cursor-pointer'>Become A Partner</Link>
+            <Link to="/contact" className='text-lg rounded-sm bg-white text-green-900 font-semibold px-6 py-2 hover:text-white hover:bg-green-900 transition-color duration-300 border border-green-900 cursor-pointer'>Plan A Visit</Link>
         </div>
         <div className='flex md:flex-row flex-col md:justify-between md:px-20 px-15'>
             <div className='flex justify-between items-center gap-5'>

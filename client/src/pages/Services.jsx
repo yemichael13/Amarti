@@ -6,6 +6,8 @@ import Poultry from "../assets/poultry_production.jpg";
 import Horticulture from "../assets/holti7.webp";
 import Visitors from "../assets/visitors.jpg";
 import Training from "../assets/training.png";
+import PageMotion from "../components/motion/PageMotion";
+import Reveal from "../components/motion/Reveal";
 
 const services = [
   {
@@ -38,15 +40,18 @@ const services = [
 const Services = () => {
   return (
     <div>
+      <PageMotion>
       <Navbar />
+      <Reveal>
       <div className="pt-28 flex flex-col justify-center items-center gap-5 bg-green-900 text-white px-6 py-5">
         <h1 className="text-4xl md:text-6xl font-bold text-center">Core Services</h1>
         <p className="text-lg md:w-3/5 w-full text-center">
           We provide integrated agricultural production and eco-tourism services designed to generate income, improve nutrition, and protect natural resources.
         </p>
       </div>
-
+      </Reveal>
       {/* Service Cards */}
+      <Reveal>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-6 md:px-20 py-16">
         {services.map((service, index) => (
           <div
@@ -65,8 +70,11 @@ const Services = () => {
           </div>
         ))}
       </div>
-
+        </Reveal>
+      <Reveal>
       <Footer />
+      </Reveal>
+      </PageMotion>
     </div>
   );
 };

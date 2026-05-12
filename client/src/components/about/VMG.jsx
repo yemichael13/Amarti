@@ -53,7 +53,7 @@ function VMG() {
         <img src={VMG_Pic} alt="VMG" className="absolute inset-0 w-full h-full object-cover" />
         <div className="absolute inset-0 bg-black/40"></div>
 
-        <div className="relative z-10 w-full max-w-4xl px-6 md:px-10 py-10 bg-white/80 rounded-md border border-black">
+        <div className="relative z-10 w-full max-w-4xl px-6 md:px-10 py-10 bg-white/80 rounded-md border border-black flex flex-col justify-center items-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Objectives</h2>
           <ul className="space-y-4 text-sm md:text-base">
             <li className="flex items-center gap-2"><FaCheckCircle className="text-green-700" /> Increase household income of Aamaartii PLC owners</li>
