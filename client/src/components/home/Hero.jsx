@@ -5,6 +5,7 @@ import Hero_3 from "../../assets/horti_2.jpg";
 import Hero_4 from "../../assets/horti.jpg";
 import Hero_5 from "../../assets/acuaculture.jpg";
 import { Link } from "react-router-dom";
+import TextType from '../animations/TextType';
 
 const images = [Hero_Pic, Hero_2, Hero_3, Hero_4, Hero_5];
 
@@ -38,9 +39,21 @@ const Hero = () => {
       {/* Content layer */}
       <div className="hero-content relative z-10 flex flex-col w-full md:w-3/5 h-full justify-center items-center md:items-start px-4 md:px-10 md:mt-20">
       <h1 className="md:text-8xl text-6xl text-white font-black">AAMAARTII</h1>
-        <p className="text-white md:text-xl text-lg max-w-3/4 text-center md:text-start font-medium pt-6">
-          Building Sustainable Livelihoods Through Integrated Agricultural Prodcution & Eco-Tourism
-        </p>
+        
+
+<TextType 
+  text={["Building Sustainable Livelihoods", "Through Integrated Agricultural Prodcution & Eco-Tourism!"]}
+  typingSpeed={75}
+  pauseDuration={1500}
+  showCursor
+  cursorCharacter="_"
+  className="text-white md:text-xl text-lg max-w-3/4 text-center md:text-start font-medium pt-6"
+  deletingSpeed={50}
+  variableSpeedEnabled={false}
+  variableSpeedMin={60}
+  variableSpeedMax={120}
+  cursorBlinkDuration={0.5}
+/>
 
         <div className="flex md:flex-row flex-col gap-5 md:gap-10 py-10 text-center">
           <Link

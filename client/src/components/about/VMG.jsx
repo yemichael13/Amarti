@@ -14,7 +14,7 @@ function VMG() {
         <div className="absolute inset-0 bg-black/40"></div>
 
         {/* Fade to white at top */}
-        <div className="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-white to-transparent"></div>
+        <div className="absolute inset-x-0 top-0 h-40 bg-linear-to-b from-white to-transparent"></div>
 
         <div className="relative z-10 w-full max-w-6xl px-6 md:px-10">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
