@@ -1,0 +1,12 @@
+# Ignore server sensitive files and uploaded assets
+server/config/
+server/migrations/
+server/uploads/
+server/check_admin.php
+server/migrate.php
+server/set_admin_password.php
+
+# Ignore local client helper files and directories
+client/utils/
+client/api.js
+client/context/
