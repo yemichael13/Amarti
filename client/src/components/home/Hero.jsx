@@ -34,7 +34,7 @@ const Hero = () => {
       ))}
 
       {/* Glass overlay */}
-      <div className="absolute inset-0 backdrop-blur-sm bg-black/10"></div>
+      <div className="absolute inset-0  bg-black/10"></div>
 
       {/* Content layer */}
       <div className="hero-content relative z-10 flex flex-col w-full md:w-3/5 h-full justify-center items-center md:items-start px-4 md:px-10 md:mt-20">

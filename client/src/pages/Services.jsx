@@ -12,28 +12,28 @@ import Reveal from "../components/motion/Reveal";
 const services = [
   {
     img: Fish,
-    title: "Aquaculture",
-    desc: "Cold-water fish farming with carp and tilapia, using circular waste flows to reduce feed costs and improve protein supply."
+    title: "Smart Aquaculture",
+    desc: "AI-assisted aquaculture systems with IoT-enabled water quality monitoring, pond aeration, fish health tracking, and sustainable feed management designed to improve productivity and reduce environmental impact."
   },
   {
     img: Poultry,
-    title: "Poultry Production",
-    desc: "Dual-purpose Koekoek and Sasso breeds producing meat and eggs, integrated with fish ponds and organic compost systems."
+    title: "AI-Enabled Poultry Production",
+    desc: "Integrated poultry systems utilizing smart monitoring, improved biosecurity practices, sustainable feeding strategies, and resource recycling to enhance production efficiency and profitability."
   },
   {
     img: Horticulture,
-    title: "Horticulture",
-    desc: "High-value vegetables grown in plastic tunnels and open fields, irrigated with pond water and fertilized with organic compost."
+    title: "Intelligent Horticulture",
+    desc: "Climate-smart horticulture using greenhouse technologies, efficient irrigation systems, organic nutrient recycling, and smart environmental monitoring for sustainable crop production."
   },
   {
     img: Visitors,
-    title: "Eco-Tourism",
-    desc: "Recreation hub with swimming, boating, cycling, and a cafeteria — generating income while promoting environmental education."
+    title: "Eco-Tourism & Recreation",
+    desc: "Eco-friendly recreational and educational experiences including farm visits, cycling paths, recreational activities, environmental awareness programs, and organic food experiences."
   },
   {
     img: Training,
-    title: "Training & Knowledge Sharing",
-    desc: "Hands-on farmer training, field days, and demonstration programs to catalyze new integrated farms and build local capacity."
+    title: "Training, Innovation & Knowledge Services",
+    desc: "Hands-on training and demonstration services in integrated farming systems, agribusiness, AI and IoT in agriculture, climate-smart practices, environmental sustainability, and eco-tourism management."
   }
 ];
 

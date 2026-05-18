@@ -26,13 +26,24 @@ const Training = () => {
           <h4 className="md:text-3xl text-2xl">Anybody Interested!</h4>
         </div>
         <div className="pt-5">
-          <h2 className="text-4xl font-bold mb-5">Focus Area</h2>
-          <ul className="space-y-4 text-sm md:text-base text-center text-white">
-            <li className="flex items-center gap-2"><FaCheckCircle  /> Integrated Farming</li>
-            <li className="flex items-center gap-2"><FaCheckCircle  /> Cliemate-Smart Agriculture</li>
-            <li className="flex items-center gap-2"><FaCheckCircle  /> Agribusiness Basics</li>
+          <h2 className="text-4xl font-bold mb-10 text-center">Focus Area</h2>
+          <div className="md:flex gap-20 justify-center text-center">
+            <ul className="space-y-4 text-sm md:text-base text-center text-white">
+            <li className="flex items-center gap-2"><FaCheckCircle  /> Integrated Farming Systems</li>
+            <li className="flex items-center gap-2"><FaCheckCircle  /> Climate-Smart Agriculture</li>
+            <li className="flex items-center gap-2"><FaCheckCircle  /> AI & IoT Applications in Agriculture</li>
+            <li className="flex items-center gap-2"><FaCheckCircle  /> Smart Irrigation & Water Management</li>
             
           </ul>
+
+            <ul className="space-y-4 text-sm md:text-base text-center text-white mt-4 md:mt-0">
+            <li className="flex items-center gap-2"><FaCheckCircle  /> Agricultural Data Analytics & Farm Monitoring</li>
+            <li className="flex items-center gap-2"><FaCheckCircle  /> Agribusiness & Sustainable Farm Management</li>
+            <li className="flex items-center gap-2"><FaCheckCircle  /> Eco-Tourism Operations & Environmental Education</li>
+            <li className="flex items-center gap-2"><FaCheckCircle  /> Resource Recycling & Circular Farming Systems</li>
+          </ul>
+          </div>
+          
         </div>
       </section>
       <Reveal>

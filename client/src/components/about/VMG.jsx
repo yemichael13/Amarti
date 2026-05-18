@@ -23,7 +23,7 @@ function VMG() {
               <img src={Vision} alt="Vision" className="w-24 h-24 object-contain" />
               <h2 className="text-2xl md:text-3xl font-bold">Vision</h2>
               <p className="text-sm md:text-base">
-                To become a leading integrated agro-eco-tourism enterprise in Africa.
+                To become a leading model of sustainable, AI-driven integrated farming and eco-tourism innovation in Africa.
               </p>
             </div>
 
@@ -32,7 +32,7 @@ function VMG() {
               <img src={Mission} alt="Mission" className="w-24 h-24 object-contain" />
               <h2 className="text-2xl md:text-3xl font-bold">Mission</h2>
               <p className="text-sm md:text-base">
-                To deliver inclusive, climate-smart systems that increase income, create jobs, and improve nutrition.
+                To produce high-quality fish, poultry, and horticultural products through an integrated, AI-enabled farming system while promoting eco-tourism, efficient resource utilization, climate-smart agriculture, and environmental sustainability.
               </p>
             </div>
 
@@ -41,7 +41,7 @@ function VMG() {
               <img src={Goal} alt="Goal" className="w-24 h-24 object-contain" />
               <h2 className="text-2xl md:text-3xl font-bold">Goal</h2>
               <p className="text-sm md:text-base">
-                To establish a sustainable and scalable integrated production and eco-tourism model.
+                To establish a commercially viable, technologically advanced, ecologically sustainable, and socially inclusive integrated farming and recreation hub that enhances food security, creates employment, and stimulates regional economic growth.
               </p>
             </div>
           </div>
@@ -56,12 +56,15 @@ function VMG() {
         <div className="relative z-10 w-full max-w-4xl px-6 md:px-10 py-10 bg-white/80 rounded-md border border-black flex flex-col justify-center items-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Objectives</h2>
           <ul className="space-y-4 text-sm md:text-base">
-            <li className="flex items-center gap-2"><FaCheckCircle className="text-green-700" /> Increase household income of Aamaartii PLC owners</li>
-            <li className="flex items-center gap-2"><FaCheckCircle className="text-green-700" /> Strengthen sustainable livelihoods for youth and women</li>
-            <li className="flex items-center gap-2"><FaCheckCircle className="text-green-700" /> Improve access to affordable and nutritious food for urban and rural households</li>
-            <li className="flex items-center gap-2"><FaCheckCircle className="text-green-700" /> Enhance nutrition through fish, fruit, and vegetable production</li>
-            <li className="flex items-center gap-2"><FaCheckCircle className="text-green-700" /> Promote water reuse and environmental sustainability</li>
-            <li className="flex items-center gap-2"><FaCheckCircle className="text-green-700" /> Serve as a practical learning and demonstration hub</li>
+            <li className="flex items-center gap-2"><FaCheckCircle className="text-green-700" /> Increase household income and economic resilience through integrated smart farming systems</li>
+            <li className="flex items-center gap-2"><FaCheckCircle className="text-green-700" /> Strengthen sustainable livelihoods and create employment opportunities for youth and women</li>
+            <li className="flex items-center gap-2"><FaCheckCircle className="text-green-700" /> Improve access to affordable, nutritious, and sustainably produced food</li>
+            <li className="flex items-center gap-2"><FaCheckCircle className="text-green-700" /> Enhance nutrition through integrated fish, poultry, fruit, and vegetable production</li>
+            <li className="flex items-center gap-2"><FaCheckCircle className="text-green-700" /> Enhance nutrition through integrated fish, poultry, fruit, and vegetable production</li>
+            <li className="flex items-center gap-2"><FaCheckCircle className="text-green-700" /> Promote AI-enabled agriculture, IoT integration, and agricultural data-driven decision making</li>
+            <li className="flex items-center gap-2"><FaCheckCircle className="text-green-700" /> Improve water reuse, energy efficiency, and environmental sustainability</li>
+            <li className="flex items-center gap-2"><FaCheckCircle className="text-green-700" /> Serve as a practical innovation, training, and demonstration hub for integrated smart agriculture</li>
+            <li className="flex items-center gap-2"><FaCheckCircle className="text-green-700" /> Train farmers, students, and practitioners on climate-smart and technology-enabled farming systems</li>
           </ul>
         </div>
       </div>

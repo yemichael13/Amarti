@@ -43,11 +43,14 @@ const Target = () => {
       {/* Outputs Section */}
       <h2 className="text-center text-4xl font-bold">Expected Outputs</h2>
       <div className="mt-10 pb-10 px-5 max-w-4xl">
-        <p className="font-semibold md:text-xl flex items-center  gap-5 text-sm"><FaCheckCircle className="text-green-700" /> Increased household income and diversified livelihoods</p>
-        <p className="font-semibold md:text-xl flex items-center  gap-5 text-sm"><FaCheckCircle className="text-green-700" /> Improved nutrition for partner households and urban dwellers</p>
-        <p className="font-semibold md:text-xl flex items-center  gap-5 text-sm"><FaCheckCircle className="text-green-700" /> Increased supply of fish, poultry, fruits, and vegetables to urban markets</p>
-        <p className="font-semibold md:text-xl flex items-center  gap-5 text-sm"><FaCheckCircle className="text-green-700" /> Employment creation for youth and women</p>
-        <p className="font-semibold md:text-xl flex items-center  gap-5 text-sm"><FaCheckCircle className="text-green-700" /> Functional integrated agro‑eco‑tourism site</p>
+        <p className="font-semibold md:text-xl flex items-center  gap-5 text-sm"><FaCheckCircle className="text-green-700" /> Increased household income and diversified livelihoods through AI-driven integrated farming systems</p>
+        <p className="font-semibold md:text-xl flex items-center  gap-5 text-sm"><FaCheckCircle className="text-green-700" /> Improved nutrition and food security for partner households and urban communities</p>
+        <p className="font-semibold md:text-xl flex items-center  gap-5 text-sm"><FaCheckCircle className="text-green-700" /> Increased supply of fish, poultry, fruits, and vegetables to urban and regional markets</p>
+        <p className="font-semibold md:text-xl flex items-center  gap-5 text-sm"><FaCheckCircle className="text-green-700" /> Creation of sustainable employment opportunities for youth and women</p>
+        <p className="font-semibold md:text-xl flex items-center  gap-5 text-sm"><FaCheckCircle className="text-green-700" /> Establishment of a functional integrated aqua–agro–eco-tourism and innovation hub</p>
+        <p className="font-semibold md:text-xl flex items-center  gap-5 text-sm"><FaCheckCircle className="text-green-700" /> Adoption of IoT-enabled smart farming and climate-smart agricultural practices</p>
+        <p className="font-semibold md:text-xl flex items-center  gap-5 text-sm"><FaCheckCircle className="text-green-700" /> Development of a scalable model for technology-driven integrated farming in Ethiopia</p>
+        <p className="font-semibold md:text-xl flex items-center  gap-5 text-sm"><FaCheckCircle className="text-green-700" /> Training and empowerment of farmers, students, and development practitioners in AI-enabled agriculture</p>
       </div>
     </div>
   );

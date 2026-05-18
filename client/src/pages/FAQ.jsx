@@ -9,38 +9,69 @@ const FAQ = () => {
   const [activeIndex, setActiveIndex] = useState(null);
 
   // Project-specific FAQs
-  const faqs = [
-    {
-      question: "What is the Aamaartii Integrated AgriFood & EcoRecreation Hub?",
-      answer:
-        "It is a circular farming and eco-tourism project in Sheno, Ethiopia, combining aquaculture, poultry, horticulture, and recreation facilities to improve nutrition, create jobs, and promote sustainability."
-    },
-    {
-      question: "Where is the project located?",
-      answer:
-        "The hub is located in Sheno Town, Kimbibit District, North Shewa Zone, Oromia Region, Ethiopia, about 75 km northeast of Addis Ababa."
-    },
-    {
-      question: "What are the main components of the project?",
-      answer:
-        "The project integrates aquaculture (fish farming), poultry production, horticulture, and eco-tourism facilities such as swimming, boating, cycling paths, and a cafeteria."
-    },
-    {
-      question: "How does the project promote sustainability?",
-      answer:
-        "Waste flows are closed: poultry manure fertilizes the pond, pond water irrigates vegetables, and vegetable trimmings feed poultry. This reduces external inputs and enhances environmental sustainability."
-    },
-    {
-      question: "What impact will the project have on the community?",
-      answer:
-        "It will provide affordable protein and vegetables to at least 500 people, create 15–20 direct jobs (50% for women and youth), and train 200 farmers, catalyzing at least 20 new integrated farms."
-    },
-    {
-      question: "How is the project financially viable?",
-      answer:
-        "By Year 3, it is projected to generate 1–2 tons of fish, 1,000 kg of poultry meat, 10,000 eggs, and 3–5 tons of vegetables annually, plus eco-tourism revenue. ROI is expected to reach 22% by Year 5."
-    }
-  ];
+  // Project-specific FAQs
+const faqs = [
+  {
+    question: "What is the Aamaartii Integrated AgriFood, EcoRecreation & Innovation Hub?",
+    answer:
+      "Aamaartii PLC is an integrated aqua-agro-eco-tourism and innovation enterprise located in Sheno, Ethiopia. The project combines smart aquaculture, AI-enabled poultry production, intelligent horticulture, eco-tourism, and climate-smart technologies to improve livelihoods, strengthen food security, create jobs, and promote environmental sustainability."
+  },
+  {
+    question: "Where is the project located?",
+    answer:
+      "The project is located in Sheno Town, Kimbibit District, North Shewa Zone, Oromia Region, Ethiopia, approximately 75 km northeast of Addis Ababa."
+  },
+  {
+    question: "What are the main components of the project?",
+    answer:
+      "The project integrates smart aquaculture, AI-assisted poultry production, climate-smart horticulture, eco-tourism and recreation facilities, AI and IoT-based farm monitoring systems, training and demonstration services, and sustainable resource recycling systems."
+  },
+  {
+    question: "How does Aamaartii PLC use AI and IoT technologies?",
+    answer:
+      "The project incorporates AI and IoT technologies for smart water quality monitoring, automated irrigation systems, environmental sensing, fish pond management, poultry monitoring, agricultural data analytics, and resource optimization to improve productivity and sustainability."
+  },
+  {
+    question: "How does the project promote sustainability?",
+    answer:
+      "Aamaartii PLC follows a circular farming approach where resources are reused efficiently. Poultry manure fertilizes fish ponds, nutrient-rich pond water irrigates crops, and agricultural by-products are recycled within the farming system. This minimizes waste, reduces external inputs, and supports environmental sustainability."
+  },
+  {
+    question: "What eco-tourism experiences will visitors enjoy?",
+    answer:
+      "Visitors will experience guided farm tours, fish harvesting activities, recreational spaces, organic food tasting, cycling paths, environmental learning experiences, and nature-based recreation within a sustainable farming environment."
+  },
+  {
+    question: "Who can participate in the training programs?",
+    answer:
+      "The training programs are open to farmers, students, researchers, development practitioners, entrepreneurs, and anyone interested in integrated farming, climate-smart agriculture, AI and IoT in agriculture, and sustainable agribusiness."
+  },
+  {
+    question: "Will the project create employment opportunities?",
+    answer:
+      "Yes. The project is designed to create direct and indirect employment opportunities, especially for youth and women, through agricultural production, eco-tourism operations, training services, and agri-tech innovation activities."
+  },
+  {
+    question: "How does the project improve food security and nutrition?",
+    answer:
+      "The integrated farming system increases the production of fish, poultry, fruits, and vegetables, helping improve access to affordable, nutritious, and sustainably produced food for urban and rural communities."
+  },
+  {
+    question: "Is the project financially sustainable?",
+    answer:
+      "Yes. The project combines multiple revenue streams including aquaculture, poultry, horticulture, eco-tourism, training services, and future agri-tech innovation solutions. This diversified model improves long-term financial sustainability and resilience."
+  },
+  {
+    question: "Can investors and development partners collaborate with Aamaartii PLC?",
+    answer:
+      "Absolutely. Aamaartii PLC welcomes collaboration opportunities with investors, development organizations, research institutions, NGOs, and private-sector partners interested in sustainable agriculture, eco-tourism, innovation, and climate-smart development."
+  },
+  {
+    question: "What makes Aamaartii PLC different from traditional farming projects?",
+    answer:
+      "Unlike traditional farming projects, Aamaartii PLC integrates agriculture, eco-tourism, AI-driven technologies, circular resource management, environmental sustainability, and practical training into one scalable ecosystem designed for long-term social, environmental, and economic impact."
+  }
+];
 
   const toggleFAQ = (index) => {
     setActiveIndex(activeIndex === index ? null : index);
@@ -48,8 +79,9 @@ const FAQ = () => {
 
   return (
     <div>
-      <PageMotion>
       <Navbar />
+      <PageMotion>
+      
       <Reveal>
       <div className="px-6 py-10 mt-16 max-w-4xl mx-auto">
         <h2 className="text-4xl md:text-6xl font-bold text-center mb-10">
