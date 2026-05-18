@@ -12,7 +12,6 @@ dist
 dist-ssr
 utils
 api.js
-context
 *.local
 
 # Editor directories and files
