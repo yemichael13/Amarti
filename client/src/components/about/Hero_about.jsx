@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import About_Pic from "../../assets/fish.webp";
+import PageMotion from "../../components/motion/PageMotion";
+import Reveal from "../../components/motion/Reveal";
 
 const Hero_about = () => {
   const [showMore, setShowMore] = useState(false);
@@ -20,12 +22,13 @@ const Hero_about = () => {
       <div className="absolute inset-0 bg-black/40"></div>
 
       {/* Fade to white at bottom */}
-      <div className="absolute inset-x-0 bottom-0 h-40 bg-linear-to-t from-white to-transparent"></div>
-
+      <div className="absolute inset-x-0 bottom-0 h-20 bg-linear-to-t from-white to-transparent"></div>
+      <PageMotion>
       {/* Content */}
       <div className="relative z-10 max-w-6xl text-center px-6 md:px-5">
+        <Reveal>
         <h1 className="text-4xl md:text-6xl font-black font-serif text-white mb-6">
-          About Aamaartii PLC
+          About Aamaartii
         </h1>
         <p className="text-sm md:text-lg text-white leading-relaxed">
           Aamaartii PLC is an integrated aqua-agro-eco-tourism and innovation 
@@ -39,22 +42,30 @@ const Hero_about = () => {
             {showMore ? "Show Less" : "Read More"}
           </span>
         </p>
-
+        </Reveal>
         {/* Expanded text with smooth transition */}
         <div
           className={`overflow-hidden transition-all duration-700 ease-in-out ${
-            showMore ? "max-h-[1000px] opacity-100 mt-4" : "max-h-0 opacity-0"
+            showMore ? "max-h-250 opacity-100 mt-4" : "max-h-0 opacity-0"
           }`}
         >
+          <Reveal>
           <p className="text-sm  text-white leading-relaxed">
-            Aamaartii PLC is implementing an AI-driven Integrated Fish–Poultry–Horticulture–Eco-Tourism Project that combines sustainable aquaculture, poultry farming, horticultural crop production, eco-tourism services, and smart farming technologies to promote efficient and circular use of water, energy, and land resources.
-
-The project integrates IoT-based monitoring systems, agricultural data analytics, climate-smart irrigation technologies, and intelligent farm management practices to optimize productivity, reduce operational costs, and improve environmental sustainability. By leveraging innovation and resource integration, the system improves income generation, strengthens food and nutritional security, and supports resilient local economies.
-
-In addition to production and recreation services, Aamaartii PLC serves as a practical learning, research, and demonstration hub for students, farmers, development practitioners, and institutions by providing hands-on training in integrated farming systems, AI and IoT applications in agriculture, agribusiness management, climate-smart agriculture, environmental conservation, and eco-tourism operations.
+           Aamaartii PLC is launching an AI-driven, integrated fish-poultry-horticulture-eco-tourism
+            project designed to maximize resource efficiency. By combining sustainable aquaculture,
+             poultry farming, climate-smart horticulture, and eco-tourism, the system creates a 
+             circular loop that optimizes water, energy, and land use. The operation leverages smart
+              technologies—including IoT monitoring systems, agricultural data analytics, 
+              and intelligent management practices—to boost farm productivity, lower operational 
+              costs, and reduce environmental impact.Beyond production and recreational services, 
+              the project serves as a practical hub for hands-on learning, research, and demonstration. 
+              It provides vital training for students, farmers, and institutions in cutting-edge fields like AI and IoT agricultural applications, agribusiness management, climate-smart farming, and eco-tourism operations. Ultimately, this scalable model improves local income generation, strengthens food security, and fosters environmental sustainability.
           </p>
+          </Reveal>
         </div>
+        
       </div>
+      </PageMotion>
     </section>
   );
 };

@@ -10,6 +10,8 @@ import Chicken from "../../assets/chicken_crop.jpg";
 import Fresh from "../../assets/fresh_food.png";
 import Nature from "../../assets/nature_based.png";
 import { FaCheckCircle } from "react-icons/fa";
+import PageMotion from "../../components/motion/PageMotion";
+import Reveal from "../../components/motion/Reveal";
 
 const images = [Tour, Fish, Chicken, Fresh, Nature];
 
@@ -31,7 +33,10 @@ function Experience() {
       />
       <div className="absolute inset-0 bg-black/50"></div>
       <div className="relative z-10 max-w-6xl text-center px-6 md:px-5 ">
+        <PageMotion>
+          <Reveal>
         <h1 className='md:text-4xl text-3xl font-black mb-5 mt-5 text-white'>What You Will Experience</h1>
+        </Reveal>
         <div className="relative z-10 md:mx-20 mx-4">
         <Swiper
           modules={[Autoplay]}
@@ -45,6 +50,7 @@ function Experience() {
         >
           {values.map((val, index) => (
             <SwiperSlide key={index}>
+              <Reveal>
               <div className="border border-whte rounded-sm p-10 flex flex-col gap-6 justify-center items-center text-center bg-white/60 shadow-lg h-auto pt-5 md:mx-0 mx-2">
                 <img
                   src={images[index]}
@@ -53,10 +59,12 @@ function Experience() {
                 />
                 <h3 className="font-bold text-2xl text-black">{val.title}</h3>
               </div>
+              </Reveal>
             </SwiperSlide>
           ))}
         </Swiper>
         <div className='bg-black/50 border-black rounded-lg flex flex-col justify-center items-center gap-5 my-5 py-5'>
+        <Reveal>
         <h2 className='text-4xl text-white font-bold'>Who Can Visit?</h2>
         <ul className="space-y-4 text-sm md:text-base text-center text-white">
             <li className="flex items-center gap-2"><FaCheckCircle  /> Families</li>
@@ -65,9 +73,11 @@ function Experience() {
             <li className="flex items-center gap-2"><FaCheckCircle  /> Researchers & Practitioners</li>
             
           </ul>
+          </Reveal>
         </div>
         
       </div>
+      </PageMotion>
       </div>
     </div>
   )

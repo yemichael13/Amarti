@@ -1,5 +1,7 @@
 import React from 'react'
 import Horticulcure from "../../assets/horti_2.jpg";
+import PageMotion from "../../components/motion/PageMotion";
+import Reveal from "../../components/motion/Reveal";
 
 function Hero_Tourism() {
   return (
@@ -11,8 +13,12 @@ function Hero_Tourism() {
       />
       <div className="absolute inset-0 bg-black/40"></div>
       <div className="relative z-10 max-w-6xl text-center px-6 md:px-5 text-white">
+        <PageMotion>
+          <Reveal>
         <h1 className='md:text-6xl text-4xl font-black mb-5'>Experience Nature, Farming & Sustainabily</h1>
         <h4 className='text-lg font-medium'>Discover how integrated agriculture and eco-tourism work together in a real-world setting.</h4>
+        </Reveal>
+        </PageMotion>
       </div>
     </div>
   )

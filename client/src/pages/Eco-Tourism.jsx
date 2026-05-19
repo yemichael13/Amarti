@@ -11,9 +11,9 @@ const EcoTourism = () => {
   return (
     <div>
       <Navbar />
-      <PageMotion>
-      <section><Reveal><Hero_Tourism /></Reveal></section>
-      <section><Reveal><Experience /></Reveal></section>
+      
+      <section><Hero_Tourism /></section>
+      <section><Experience /></section>
       <section className="flex flex-col justify-center items-center py-5 gap-10">
        
         <h2 className="md:text-7xl text-3xl font-bold">Interested In Visiting?</h2>
@@ -25,7 +25,7 @@ const EcoTourism = () => {
       <Reveal>
       <Footer />
       </Reveal>
-      </PageMotion>
+      
     </div>
   );
 };

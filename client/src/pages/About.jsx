@@ -11,24 +11,25 @@ const About = () => {
   return (
     <div>
       <Navbar />
-      <PageMotion>
+      
         <section>
-          <Reveal>
+          
             <Hero_about />
-          </Reveal>
+          
         </section>
         <section>
-          <Reveal>
+          
             <VMG />
-          </Reveal>
+          
         </section>
         <section>
           <Reveal>
             <Sustainability />
           </Reveal>
         </section>
-      </PageMotion>
+      <Reveal>
       <Footer />
+      </Reveal>
     </div>
   );
 };

@@ -9,7 +9,7 @@ import Horticulture from "../../assets/holticulture.png";
 import Eco_Tourism from "../../assets/eco-tourism.webp";
 import Agri_Tech from "../../assets/agri-tech.webp";
 
-const images = [Fish, Poultry, Horticulture, Eco_Tourism, Agri_Tech];
+const images = [Fish, Horticulture, Poultry, Eco_Tourism, Agri_Tech];
 
 const values = [
   { title: "Smart Aquaculture", text: "AI-assisted aquaculture systems integrated with IoT-based water quality monitoring, pond aeration, and smart feeding solutions to improve fish productivity, reduce waste, and ensure sustainable resource management." },

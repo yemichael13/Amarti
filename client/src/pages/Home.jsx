@@ -16,11 +16,11 @@ const Home = () => {
     return(
         <div>
             <Navbar />
-            <PageMotion>
+            
                 <section>
-                    <Reveal>
+                    
                 <Hero />
-                </Reveal>
+                
             </section>
             <section>
                 <Reveal>
@@ -62,7 +62,7 @@ const Home = () => {
                 <Footer />
                 </Reveal>
             </section>
-            </PageMotion>
+            
             
         </div>
     )

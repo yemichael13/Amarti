@@ -11,7 +11,7 @@ import Reveal from "../components/motion/Reveal";
 const Contact = () => {
   return (
     <div>
-      <PageMotion>
+      
       <div className="relative min-h-screen flex items-center justify-center overflow-hidden">
         <img
         src={Contact_Img}
@@ -20,8 +20,10 @@ const Contact = () => {
       />
       <Navbar />
       
-        <Reveal>
+        
       <div className="absolute inset-0 bg-black/40"></div>
+      <PageMotion>
+        <Reveal>
       <div className="relative z-10 max-w-5xl text-center px-6 md:px-5 text-white">
         <h1 className='md:text-8xl text-6xl font-black mb-5'>CONTACT US</h1>
         <div className="text-2xl flex flex-col gap-5 justify-center items-center">
@@ -31,11 +33,13 @@ const Contact = () => {
         </div>
       </div>
       </Reveal>
+      </PageMotion>
+      
       
     </div>
     
     <Footer />
-    </PageMotion>
+ 
     </div>
     
   );
