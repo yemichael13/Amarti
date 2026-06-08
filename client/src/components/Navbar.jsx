@@ -12,7 +12,7 @@ const Navbar = () => {
     { key: "about", path: "/about", label: "About" },
     { key: "services", path: "/services", label: "Services" },
     { key: "eco-tourism", path: "/eco-tourism", label: "Eco-Tourism" },
-    { key: "training", path: "/training", label: "Training" },
+    { key: "innovation-sustainability", path: "/innovation-sustainability", label: "Innovation" },
     { key: "contact", path: "/contact", label: "Contact" },
   ];
 

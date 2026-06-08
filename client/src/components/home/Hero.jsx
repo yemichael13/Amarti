@@ -46,7 +46,7 @@ const Hero = () => {
         <Reveal className="h-full w-full flex justify-center items-center">
           
           {/* Content layer: Centered vertically using items-center and justify-center */}
-          <div className="hero-content relative z-10 flex flex-col w-full md:w-3/5 h-full justify-center items-center text-center px-4 md:px-10 mx-auto">
+          <div className="hero-content relative z-10 flex flex-col w-full md:w-3/5 h-full justify-center items-center text-center px-4 md:px-10 mx-auto mt-30">
             
             <h1 className="md:text-8xl text-6xl text-white font-black">AAMAARTII</h1>
 
@@ -63,6 +63,12 @@ const Hero = () => {
               variableSpeedMax={120}
               cursorBlinkDuration={0.5}
             />
+            <div className="bg-white/70 rounded-lg p-5 mt-6">
+              <p className="text-green-900 md:text-lg text-sm text-center font-light">
+              Aamaartii PLC is developing Ethiopia's next-generation integrated farming ecosystem—combining aquaculture, poultry, dairy, horticulture, eco-tourism, renewable energy, and AI-powered smart farming technologies to create sustainable livelihoods, nutritious food systems, and climate-resilient communities.
+            </p>
+            </div>
+            
 
             <div className="flex md:flex-row flex-col gap-5 md:gap-10 py-10 justify-center items-center w-full">
               <Link

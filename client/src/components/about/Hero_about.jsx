@@ -51,15 +51,9 @@ const Hero_about = () => {
         >
           <Reveal>
           <p className="text-sm  text-white leading-relaxed">
-           Aamaartii PLC is launching an AI-driven, integrated fish-poultry-horticulture-eco-tourism
-            project designed to maximize resource efficiency. By combining sustainable aquaculture,
-             poultry farming, climate-smart horticulture, and eco-tourism, the system creates a 
-             circular loop that optimizes water, energy, and land use. The operation leverages smart
-              technologies—including IoT monitoring systems, agricultural data analytics, 
-              and intelligent management practices—to boost farm productivity, lower operational 
-              costs, and reduce environmental impact.Beyond production and recreational services, 
-              the project serves as a practical hub for hands-on learning, research, and demonstration. 
-              It provides vital training for students, farmers, and institutions in cutting-edge fields like AI and IoT agricultural applications, agribusiness management, climate-smart farming, and eco-tourism operations. Ultimately, this scalable model improves local income generation, strengthens food security, and fosters environmental sustainability.
+           Aamaartii PLC is a forward-looking integrated farming, eco-tourism, and innovation enterprise established to demonstrate how agriculture, technology, renewable energy, and environmental stewardship can work together to create sustainable livelihoods.
+
+The enterprise combines aquaculture, poultry, dairy, horticulture, eco-tourism, biogas systems, vermicomposting, Black Soldier Fly protein production, and smart agriculture technologies into one interconnected ecosystem designed for Ethiopia's highland environmen
           </p>
           </Reveal>
         </div>

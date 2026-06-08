@@ -70,6 +70,31 @@ const faqs = [
     question: "What makes Aamaartii PLC different from traditional farming projects?",
     answer:
       "Unlike traditional farming projects, Aamaartii PLC integrates agriculture, eco-tourism, AI-driven technologies, circular resource management, environmental sustainability, and practical training into one scalable ecosystem designed for long-term social, environmental, and economic impact."
+  },
+  {
+    question: "What is a Circular Bio-Economy Model?",
+    answer:
+      "A circular bio-economy model is a system where resources are continuously reused. At Aamaartii PLC, livestock waste is converted into renewable energy, organic fertilizer, and protein-rich feed, creating a near-zero waste production system."
+  },
+   {
+    question: "What is Black Soldier Fly (BSF) Production?",
+    answer:
+      "BSF larvae convert organic waste into high-protein animal feed that can be used for poultry and fish production, significantly reducing feed costs while supporting sustainable farming."
+  },
+   {
+    question: "What is a Smart Farm?",
+    answer:
+      "A smart farm uses digital technologies such as IoT sensors, data analytics, automation, and real-time monitoring systems to improve productivity, efficiency, and sustainability."
+  },
+   {
+    question: "Does Aamaartii Use Renewable Energy?",
+    answer:
+      "Yes. The project incorporates biogas systems and solar-powered technologies to reduce environmental impact and improve operational efficiency."
+  },
+   {
+    question: "Can Students and Researchers Visit the Farm?",
+    answer:
+      "Yes. Aamaartii PLC serves as a practical learning, research, and demonstration center for students, researchers, development practitioners, and institutions interested in sustainable agriculture and innovation."
   }
 ];
 

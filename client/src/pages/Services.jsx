@@ -2,28 +2,40 @@ import React from "react";
 import { motion } from "framer-motion";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import Fish from "../assets/fish_2.png";
-import Poultry from "../assets/poultry_production.jpg";
-import Horticulture from "../assets/holti7.webp";
+import Fish from "../assets/smartaqua.webp";
+import Poultry from "../assets/dairypoultry.jpg";
+import Horticulture from "../assets/hortigreen.webp";
 import Visitors from "../assets/visitors.jpg";
 import Training from "../assets/training.png";
+import Bioeconomy from "../assets/bioeco.jpeg";
+import Smart_Farm from "../assets/smartagri.webp";
 import Reveal from "../components/motion/Reveal";
 
 const services = [
   {
     img: Fish,
     title: "Smart Aquaculture",
-    desc: "AI-assisted aquaculture systems with IoT-enabled water quality monitoring, pond aeration, fish health tracking, and sustainable feed management designed to improve productivity and reduce environmental impact."
+    desc: "High-efficiency fish production supported by natural insect-based protein feeds, recycled nutrients, and environmental monitoring systems."
   },
   {
     img: Poultry,
-    title: "AI-Enabled Poultry Production",
-    desc: "Integrated poultry systems utilizing smart monitoring, improved biosecurity practices, sustainable feeding strategies, and resource recycling to enhance production efficiency and profitability."
+    title: "Poultry & Dairy Production",
+    desc: "Integrated livestock systems producing meat, eggs, milk, organic fertilizer, and renewable energy inputs."
   },
   {
     img: Horticulture,
-    title: "Intelligent Horticulture",
-    desc: "Climate-smart horticulture using greenhouse technologies, efficient irrigation systems, organic nutrient recycling, and smart environmental monitoring for sustainable crop production."
+    title: "Greenhouse & Horticulture Production",
+    desc: "Sustainable fruit and vegetable production using climate-smart growing techniques and recycled irrigation systems."
+  },
+  {
+    img: Bioeconomy,
+    title: "Circular Bio-Economy Solutions",
+    desc: "Transforming organic waste into valuable resources through vermicomposting, Black Soldier Fly protein production, and integrated nutrient cycling."
+  },
+  {
+    img: Smart_Farm,
+    title: "Smart Farm Technology",
+    desc: "AI and IoT-enabled farm management systems for real-time monitoring, data-driven decision-making, and optimized resource use."
   },
   {
     img: Visitors,

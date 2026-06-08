@@ -10,6 +10,7 @@ import EcoTourism from "./pages/Eco-Tourism";
 import Training from "./pages/Training";
 import Contact from "./pages/Contact";
 import FAQ from "./pages/FAQ";
+import InnovationSustainability from "./pages/InnovationSustainability";
 
 import AdminLogin from "./pages/admin/Login";
 import Dashboard from "./pages/admin/Dashboard";
@@ -46,7 +47,8 @@ const AnimatedRoutes = () => {
         <Route path="/training" element={<Training />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/faq" element={<FAQ />} />
-
+        <Route path="/innovation-sustainability" element={<InnovationSustainability />} />
+        
         <Route path="/admin/login" element={<AdminLogin />} />
         <Route
           path="/admin"

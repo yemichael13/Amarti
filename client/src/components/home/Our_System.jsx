@@ -3,20 +3,24 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/autoplay";
-import Fish from "../../assets/fish_production.png";
-import Poultry from "../../assets/poultry_production.jpg";
-import Horticulture from "../../assets/holticulture.png";
+import Fish from "../../assets/smartacua.webp";
+import Poultry from "../../assets/poultrydairy.webp";
+import Horticulture from "../../assets/greenhorti.jpeg";
 import Eco_Tourism from "../../assets/eco-tourism.webp";
 import Agri_Tech from "../../assets/agri-tech.webp";
+import Biogas from "../../assets/biogas.jfif";
+import Bioeconomy from "../../assets/bioeco.jpg";
 
-const images = [Fish, Horticulture, Poultry, Eco_Tourism, Agri_Tech];
+const images = [Fish, Poultry, Horticulture, Eco_Tourism, Biogas, Agri_Tech, Bioeconomy];
 
 const values = [
-  { title: "Smart Aquaculture", text: "AI-assisted aquaculture systems integrated with IoT-based water quality monitoring, pond aeration, and smart feeding solutions to improve fish productivity, reduce waste, and ensure sustainable resource management." },
-  { title: "Intelligent Horticulture", text: "Climate-smart horticulture powered by water-efficient irrigation systems, organic nutrient recycling, greenhouse technologies, and data-driven crop monitoring for high-quality vegetable and fruit production." },
-  { title: "AI-Enabled Poultry Production", text: "Integrated poultry farming supported by smart health monitoring, improved feeding systems, waste recycling, and sustainable production practices that increase efficiency and reduce operational costs." },
+  { title: "Smart Aquaculture", text: "High-efficiency fish production supported by natural protein feeds, recycled nutrients, and real-time environmental monitoring." },
+  { title: "Poultry & Dairy Systems", text: "Integrated poultry and dairy units that provide food, income, energy resources, and nutrient inputs for the wider ecosystem." },
+  { title: "Greenhouse & Horticulture Production", text: "Climate-smart production of fruits and vegetables using recycled water, organic fertilizers, and sustainable growing methods." },
   { title: "Eco-Tourism & Recreation", text: "A nature-based recreation and learning environment featuring eco-friendly facilities, environmental education experiences, farm tours, cycling paths, recreational fishing, and sustainable tourism activities." },
-  { title: "Agri-Tech Innovation & Data Analytics", text: "Implementation of AI, IoT, and agricultural data analytics to optimize farm operations, monitor environmental conditions, improve decision-making, and create scalable smart farming solutions for Ethiopia’s highlands." },
+  { title: "Renewable Energy & Biogas", text: "Converting organic waste into clean energy while reducing emissions and improving farm efficiency." },
+  { title: "AI & Smart Farm Technology", text: "IoT sensors, Digital Twin farm management systems, real-time monitoring, solar-powered operations, and data-driven decision-making." },
+  { title: "Circular Bio-Economy", text: "Transforming waste into valuable resources through integrated nutrient cycling and zero-waste farming systems." },
 ];
 
 const Our_System = () => {

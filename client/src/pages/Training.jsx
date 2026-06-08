@@ -46,16 +46,20 @@ const Training = () => {
           <ul className="space-y-4 text-sm md:text-base text-left text-white w-full md:w-1/2">
             <li className="flex items-start gap-3"><FaCheckCircle className="mt-1 shrink-0" /> <span>Integrated Farming Systems</span></li>
             <li className="flex items-start gap-3"><FaCheckCircle className="mt-1 shrink-0" /> <span>Climate-Smart Agriculture</span></li>
-            <li className="flex items-start gap-3"><FaCheckCircle className="mt-1 shrink-0" /> <span>AI & IoT Applications in Agriculture</span></li>
-            <li className="flex items-start gap-3"><FaCheckCircle className="mt-1 shrink-0" /> <span>Smart Irrigation & Water Management</span></li>
+            <li className="flex items-start gap-3"><FaCheckCircle className="mt-1 shrink-0" /> <span>Smart Dairy Management</span></li>
+            <li className="flex items-start gap-3"><FaCheckCircle className="mt-1 shrink-0" /> <span>Aquaculture Production</span></li>
+            <li className="flex items-start gap-3"><FaCheckCircle className="mt-1 shrink-0" /> <span>Poultry Production</span></li>
+            <li className="flex items-start gap-3"><FaCheckCircle className="mt-1 shrink-0" /> <span>AI & IoT in Agriculture</span></li>
           </ul>
 
           {/* Right List */}
           <ul className="space-y-4 text-sm md:text-base text-left text-white w-full md:w-1/2">
-            <li className="flex items-start gap-3"><FaCheckCircle className="mt-1 shrink-0" /> <span>Agricultural Data Analytics & Farm Monitoring</span></li>
-            <li className="flex items-start gap-3"><FaCheckCircle className="mt-1 shrink-0" /> <span>Agribusiness & Sustainable Farm Management</span></li>
-            <li className="flex items-start gap-3"><FaCheckCircle className="mt-1 shrink-0" /> <span>Eco-Tourism Operations & Environmental Education</span></li>
-            <li className="flex items-start gap-3"><FaCheckCircle className="mt-1 shrink-0" /> <span>Resource Recycling & Circular Farming Systems</span></li>
+            <li className="flex items-start gap-3"><FaCheckCircle className="mt-1 shrink-0" /> <span>Digital Farm Management</span></li>
+            <li className="flex items-start gap-3"><FaCheckCircle className="mt-1 shrink-0" /> <span>Biogas Technology</span></li>
+            <li className="flex items-start gap-3"><FaCheckCircle className="mt-1 shrink-0" /> <span>Black Soldier Fly Production</span></li>
+            <li className="flex items-start gap-3"><FaCheckCircle className="mt-1 shrink-0" /> <span>Vermicomposting</span></li>
+            <li className="flex items-start gap-3"><FaCheckCircle className="mt-1 shrink-0" /> <span>Agribusiness & Entrepreneurship</span></li>
+            <li className="flex items-start gap-3"><FaCheckCircle className="mt-1 shrink-0" /> <span>Eco-Tourism Management</span></li>
           </ul>
           
         </div>
