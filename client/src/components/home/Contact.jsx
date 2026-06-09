@@ -16,15 +16,15 @@ function Contact() {
         <div className='flex md:flex-row flex-col md:justify-between md:px-20 px-15'>
             <div className='flex justify-between items-center gap-5'>
                 <img src={Call} alt='call' className='w-8 h-8 object-contain' />
-                <p className='text-lg font-bold'>+ 251-XXX-XXX-XXX</p>
+                <p className='text-lg font-bold'>+ 251-910-099-955</p>
             </div>
             <div className='flex justify-between items-center gap-5'>
                 <img src={Email} alt='email' className='w-8 h-8 object-contain' />
-                <p className='text-lg font-bold'>info@aamaartii.org</p>
+                <p className='text-lg font-bold'>info@aamaartii.com.et</p>
             </div>
             <div className='flex justify-between items-center gap-5'>
                 <img src={Location} alt='location' className='w-8 h-8 object-contain' />
-                <p className='text-lg font-bold'>123, Street, Addis Ababa</p>
+                <p className='text-lg font-bold'>Sheno, Ethiopia</p>
             </div>
         </div>
     </div>

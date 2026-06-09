@@ -11,6 +11,7 @@ import Contact from "../components/home/Contact";
 import Footer from "../components/Footer";
 import PageMotion from "../components/motion/PageMotion";
 import Reveal from "../components/motion/Reveal";
+import GalleryComp from "../components/home/GalleryComp";
 
 const Home = () => {
     return(
@@ -50,6 +51,11 @@ const Home = () => {
             <section>
                 <Reveal>
                 <Latest_Posts />
+                </Reveal>
+            </section>
+            <section>
+                <Reveal>
+                    <GalleryComp />
                 </Reveal>
             </section>
             <section>

@@ -28,8 +28,13 @@ const Contact = () => {
         <h1 className='md:text-8xl text-6xl font-black mb-5'>CONTACT US</h1>
         <div className="text-2xl flex flex-col gap-5 justify-center items-center">
           <a href="https://www.google.com/maps/place/Aamaartii+PLC/@9.3029908,39.2625847,244m/data=!3m1!1e3!4m6!3m5!1s0x164bd5701a88ff8f:0x343dd2d19ae30f34!8m2!3d9.3032387!4d39.2626712!16s%2Fg%2F11ytckh1wp?entry=ttu&g_ep=EgoyMDI2MDUwNi4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" className="flex gap-5 hover:translate-x-2 duration-300"><FaLocationDot /> Sheno, Ethiopia</a>
-          <a href="#" className="flex gap-5 hover:translate-x-2 duration-300"><IoMdMail /> info@aamaartii.org.et</a>
-          <p className="flex gap-5 "><IoCall /> + 251-XXX-XXX-XXX</p>
+          <a
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=aamaartii33@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex gap-5 hover:translate-x-2 duration-300"
+            ><IoMdMail /> aamaartii33@gmail.com</a>
+          <p className="flex gap-5 "><IoCall /> + 251-910-099-955</p>
         </div>
       </div>
       </Reveal>

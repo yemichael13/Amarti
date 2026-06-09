@@ -1,8 +1,10 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay } from "swiper/modules";
+import { Autoplay, Navigation } from "swiper/modules"; // import Navigation
 import "swiper/css";
 import "swiper/css/autoplay";
+import "swiper/css/navigation"; // import navigation styles
+
 import Fish from "../../assets/smartacua.webp";
 import Poultry from "../../assets/poultrydairy.webp";
 import Horticulture from "../../assets/greenhorti.jpeg";
@@ -29,13 +31,14 @@ const Our_System = () => {
       <h2 className="text-4xl font-bold text-center my-10">Our Integrated System</h2>
       <div className="relative z-10 md:mx-20 mx-4">
         <Swiper
-          modules={[Autoplay]}
+          modules={[Autoplay, Navigation]} // include Navigation
           autoplay={{ delay: 8000, disableOnInteraction: false }}
           loop={true}
+          navigation={true} // enable navigation arrows
           breakpoints={{
             320: { slidesPerView: 1, spaceBetween: 20 }, // mobile
-            768: { slidesPerView: 2, spaceBetween: 40 }, // tablet and up → only 2 visible
-            1024: { slidesPerView: 2, spaceBetween: 50 }, // desktop → still 2 visible
+            768: { slidesPerView: 2, spaceBetween: 40 }, // tablet
+            1024: { slidesPerView: 2, spaceBetween: 50 }, // desktop
           }}
         >
           {values.map((val, index) => (

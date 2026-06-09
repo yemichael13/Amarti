@@ -11,6 +11,7 @@ import Training from "./pages/Training";
 import Contact from "./pages/Contact";
 import FAQ from "./pages/FAQ";
 import InnovationSustainability from "./pages/InnovationSustainability";
+import Gallery from "./pages/Gallery";
 
 import AdminLogin from "./pages/admin/Login";
 import Dashboard from "./pages/admin/Dashboard";
@@ -48,7 +49,8 @@ const AnimatedRoutes = () => {
         <Route path="/contact" element={<Contact />} />
         <Route path="/faq" element={<FAQ />} />
         <Route path="/innovation-sustainability" element={<InnovationSustainability />} />
-        
+        <Route path="/gallery" element={<Gallery />} />
+
         <Route path="/admin/login" element={<AdminLogin />} />
         <Route
           path="/admin"
