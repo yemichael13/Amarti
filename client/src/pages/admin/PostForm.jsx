@@ -82,7 +82,7 @@ export default function PostForm({ onCreated }) {
         type="file"
         multiple
         onChange={(e) => setFiles(e.target.files)}
-        accept="image/*,video/*,application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document,text/plain,application/vnd.ms-excel,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+        accept=".jpg,.jpeg,.png,.webp,.pdf,.mp4,image/jpeg,image/png,image/webp,application/pdf,video/mp4"
       />
 
       <button>Create</button>

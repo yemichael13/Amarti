@@ -1,11 +1,6 @@
-import { API } from "../api.js";
+import { API, getFileUrl } from "../api.js";
 
-const API_BASE = "http://localhost:8000";
-
-export const getFileUrl = (path) => {
-  if (!path) return null;
-  return `${API_BASE}/${path}`;
-};
+export { getFileUrl };
 
 function buildCreateFormData(postData) {
   const fd = new FormData();
@@ -25,19 +20,15 @@ async function uploadOneFile(postId, file) {
     throw new Error("Invalid or empty file for upload");
   }
 
-  const url = API.uploadFile;
-  const attempt = async (withDev) => {
-    const fd = new FormData();
-    fd.append("post_id", String(id));
-    fd.append("file", file, file.name || "upload");
-    const u = withDev ? `${url}?dev=1` : url;
-    return fetch(u, { method: "POST", body: fd, credentials: "include" });
-  };
+  const fd = new FormData();
+  fd.append("post_id", String(id));
+  fd.append("file", file, file.name || "upload");
 
-  let res = await attempt(false);
-  if (res.status === 401 && window.location.hostname === "localhost") {
-    res = await attempt(true);
-  }
+  const res = await fetch(API.uploadFile, {
+    method: "POST",
+    body: fd,
+    credentials: "include",
+  });
 
   let data = {};
   try {
@@ -67,10 +58,7 @@ export const adminPostsAPI = {
     const str = String(idOrSlug);
     const isNumeric = /^\d+$/.test(str);
     const qs = isNumeric ? `?id=${str}` : `?slug=${encodeURIComponent(str)}`;
-    let res = await fetch(`${API.getPost}${qs}`, { credentials: "include" });
-    if (res.status === 401 && window.location.hostname === "localhost") {
-      res = await fetch(`${API.getPost}${qs}&dev=1`);
-    }
+    const res = await fetch(`${API.getPost}${qs}`, { credentials: "include" });
     if (!res.ok) throw new Error("Failed to fetch post");
     const data = await res.json();
     if (data === null) throw new Error("Post not found");
@@ -78,26 +66,19 @@ export const adminPostsAPI = {
   },
 
   async getById(id) {
-    return await adminPostsAPI.get(id);
+    return adminPostsAPI.get(id);
   },
 
   async getBySlug(slug) {
-    return await adminPostsAPI.get(slug);
+    return adminPostsAPI.get(slug);
   },
 
   async create(postData, files = []) {
-    let res = await fetch(API.createPost, {
+    const res = await fetch(API.createPost, {
       method: "POST",
       body: buildCreateFormData(postData),
       credentials: "include",
     });
-
-    if (res.status === 401 && window.location.hostname === "localhost") {
-      res = await fetch(API.createPost + "?dev=1", {
-        method: "POST",
-        body: buildCreateFormData(postData),
-      });
-    }
 
     const data = await res.json();
     if (!data.success) throw new Error(data.error || "Failed to create post");
@@ -107,8 +88,7 @@ export const adminPostsAPI = {
       throw new Error("Server did not return a valid post_id; cannot upload files.");
     }
 
-    for (let i = 0; i < files.length; i++) {
-      const f = files[i];
+    for (const f of files) {
       if (!f || f.size <= 0 || f.size > 50 * 1024 * 1024) continue;
       await uploadOneFile(postId, f);
     }
@@ -117,8 +97,7 @@ export const adminPostsAPI = {
   },
 
   async uploadFiles(postId, files = []) {
-    for (let i = 0; i < files.length; i++) {
-      const f = files[i];
+    for (const f of files) {
       if (!f || f.size <= 0 || f.size > 50 * 1024 * 1024) continue;
       await uploadOneFile(postId, f);
     }

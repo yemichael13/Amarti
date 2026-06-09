@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import Seo from "../components/Seo";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Reveal from "../components/motion/Reveal";
@@ -23,6 +24,11 @@ const sectionVariants = {
 const InnovationSustainability = () => {
   return (
     <div>
+      <Seo
+        title="Innovation & Sustainability"
+        description="Discover Aamaartii PLC innovation in smart farming, circular bioeconomy, renewable energy, and climate-smart agriculture."
+        path="/innovation-sustainability"
+      />
       <Navbar />
 
       {/* Hero Section */}

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../../context/AuthContext";
+import Seo from "../../components/Seo";
 import PageMotion from "../../components/motion/PageMotion";
 import Reveal from "../../components/motion/Reveal";
 import { API } from "../../api.js";
@@ -47,6 +48,7 @@ export default function Login({ onLogin }) {
 
   return (
     <PageMotion>
+      <Seo title="Admin Login" path="/admin/login" noindex />
       <div className="min-h-screen bg-linear-to-br from-green-50 to-green-100 flex items-center justify-center px-4 py-12">
         <Reveal className="w-full max-w-md">
           <div className="bg-white rounded-2xl shadow-xl p-8">

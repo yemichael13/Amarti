@@ -43,9 +43,9 @@ function Footer() {
             <Link to="/" className="text-white text-sm hover:text-white/70">Home</Link>
             <Link to="/about" className="text-white text-sm hover:text-white/70">About</Link>
             <Link to="/services" className="text-white text-sm hover:text-white/70">Services</Link>
-            <Link to="eco-tourism" className="text-white text-sm hover:text-white/70">Eco-Tourism</Link>
+            <Link to="/eco-tourism" className="text-white text-sm hover:text-white/70">Eco-Tourism</Link>
             <Link to="/training" className="text-white text-sm hover:text-white/70">Training</Link>
-            <Link to="news" className="text-white text-sm hover:text-white/70">Posts & Updates</Link>
+            <Link to="/news" className="text-white text-sm hover:text-white/70">Posts & Updates</Link>
             <Link to="/contact" className="text-white text-sm hover:text-white/70">Contact</Link>
             <Link to="/faq" className="text-white text-sm hover:text-white/70">FAQ</Link>
           </div>

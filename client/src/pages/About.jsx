@@ -1,4 +1,5 @@
 import React from "react";
+import Seo from "../components/Seo";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Hero_about from "../components/about/Hero_about";
@@ -11,6 +12,11 @@ import Why_Us from "../components/about/Why_Us";
 const About = () => {
   return (
     <div>
+      <Seo
+        title="About Us"
+        description="Learn about Aamaartii PLC — our vision, mission, integrated farming systems, and commitment to sustainable agriculture in Ethiopia."
+        path="/about"
+      />
       <Navbar />
       
         <section>

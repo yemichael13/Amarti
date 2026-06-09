@@ -1,4 +1,5 @@
 import React from 'react';
+import Seo from '../components/Seo';
 import InfiniteMenu from '../components/animations/InfiniteMenu';
 
 import Pic from "../assets/real/pic.jpg";
@@ -46,6 +47,11 @@ const items = [
 const Gallery = () => {
   return (
     <div style={{ height: '600px', position: 'relative' }}>
+      <Seo
+        title="Gallery"
+        description="Photo gallery showcasing Aamaartii PLC farm operations, eco-tourism, and sustainable agriculture in Ethiopia."
+        path="/gallery"
+      />
       <InfiniteMenu items={items} scale={1} />
     </div>
   );

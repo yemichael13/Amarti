@@ -1,4 +1,5 @@
 import React from "react";
+import Seo from "../components/Seo";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Hero_Tourism from "@/components/eco-tourim/Hero_Tourism";
@@ -10,6 +11,11 @@ import Reveal from "../components/motion/Reveal";
 const EcoTourism = () => {
   return (
     <div>
+      <Seo
+        title="Eco-Tourism"
+        description="Experience sustainable eco-tourism at Aamaartii PLC — farm visits, nature experiences, and agri-recreation in Ethiopia."
+        path="/eco-tourism"
+      />
       <Navbar />
       
       <section><Hero_Tourism /></section>

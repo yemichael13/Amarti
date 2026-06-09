@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import Seo from "../components/Seo";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import PageMotion from "../components/motion/PageMotion";
@@ -43,6 +44,11 @@ const News = () => {
 
   return (
     <div>
+      <Seo
+        title="News & Updates"
+        description="Latest news, updates, and stories from Aamaartii PLC on agriculture, eco-tourism, and sustainable innovation in Ethiopia."
+        path="/news"
+      />
       <Navbar />
       <PageMotion>
         <div className="min-h-screen bg-gray-50 pt-30 pb-16">

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { FaPlus, FaTimes } from "react-icons/fa";
+import Seo from "../components/Seo";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import PageMotion from "../components/motion/PageMotion";
@@ -104,6 +105,11 @@ const faqs = [
 
   return (
     <div>
+      <Seo
+        title="FAQ"
+        description="Frequently asked questions about Aamaartii PLC integrated agriculture, eco-tourism, training, and sustainability programs."
+        path="/faq"
+      />
       <Navbar />
       <PageMotion>
       

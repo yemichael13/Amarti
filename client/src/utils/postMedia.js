@@ -4,7 +4,7 @@ export function isPostImageFile(f) {
   if (!f) return false;
   if (f.mime_type && String(f.mime_type).startsWith("image/")) return true;
   const ext = String(f.file_type || "").toLowerCase().replace(/^\./, "");
-  return ["jpg", "jpeg", "png", "gif", "webp", "avif"].includes(ext);
+  return ["jpg", "jpeg", "png", "webp"].includes(ext);
 }
 
 export function getPostImageFiles(files) {

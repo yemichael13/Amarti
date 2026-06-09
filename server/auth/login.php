@@ -1,36 +1,36 @@
 <?php
-session_start();
-require __DIR__ . "/../config/db.php";
+require __DIR__ . '/../config/session.php';
+require __DIR__ . '/../config/cors.php';
+require __DIR__ . '/../config/db.php';
 
-// CORS: reflect origin to support requests with credentials
-$origin = $_SERVER['HTTP_ORIGIN'] ?? 'http://localhost:5173';
-header("Access-Control-Allow-Origin: $origin");
-header('Access-Control-Allow-Credentials: true');
-header('Access-Control-Allow-Methods: POST, OPTIONS');
-header('Access-Control-Allow-Headers: Content-Type');
-header("Content-Type: application/json");
+initSession();
+setCorsHeaders(['POST', 'OPTIONS']);
 
-if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
-    exit;
-}
-
-$email    = $_POST['email'] ?? '';
+$email    = trim($_POST['email'] ?? '');
 $password = $_POST['password'] ?? '';
 
-if (!$email || !$password) {
+if ($email === '' || $password === '') {
     http_response_code(400);
-    echo json_encode(["success" => false, "message" => "Missing fields"]);
+    echo json_encode(['success' => false, 'message' => 'Missing fields']);
     exit;
 }
 
-$stmt = $pdo->prepare("SELECT id, password FROM users WHERE email = ?");
+if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+    http_response_code(400);
+    echo json_encode(['success' => false, 'message' => 'Invalid email']);
+    exit;
+}
+
+$stmt = $pdo->prepare('SELECT id, password FROM users WHERE email = ? LIMIT 1');
 $stmt->execute([$email]);
 $user = $stmt->fetch();
 
 if ($user && password_verify($password, $user['password'])) {
-    $_SESSION['admin'] = $user['id'];
-    echo json_encode(["success" => true]);
+    session_regenerate_id(true);
+    $_SESSION['admin'] = (int) $user['id'];
+    $_SESSION['LAST_ACTIVITY'] = time();
+    echo json_encode(['success' => true]);
 } else {
     http_response_code(401);
-    echo json_encode(["success" => false, "message" => "Invalid credentials"]);
+    echo json_encode(['success' => false, 'message' => 'Invalid credentials']);
 }

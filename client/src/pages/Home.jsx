@@ -1,4 +1,5 @@
 import React from "react";
+import Seo from "../components/Seo";
 import Navbar from "../components/Navbar";
 import Hero from "../components/home/Hero";
 import Who_We_Are from "../components/home/Who_We_Are";
@@ -16,6 +17,7 @@ import GalleryComp from "../components/home/GalleryComp";
 const Home = () => {
     return(
         <div>
+            <Seo path="/" />
             <Navbar />
             
                 <section>

@@ -1,4 +1,5 @@
 import React from "react";
+import Seo from "../components/Seo";
 import Navbar from "../components/Navbar";
 import Footer from "@/components/Footer";
 import Hero_Training from "@/components/training/Hero_Training";
@@ -13,6 +14,11 @@ import Reveal from "../components/motion/Reveal";
 const Training = () => {
   return (
     <div>
+      <Seo
+        title="Training & Knowledge Sharing"
+        description="Hands-on agricultural training programs for farmers, students, and partners at Aamaartii PLC in Ethiopia."
+        path="/training"
+      />
       
       <Navbar />
       <section><Hero_Training /></section>

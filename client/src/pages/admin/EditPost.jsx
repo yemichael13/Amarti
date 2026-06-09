@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { useAuth } from "../../context/AuthContext";
 import { adminPostsAPI } from "../../utils/adminApi";
-import { getFileUrl } from "../../utils/api";
+import { getFileUrl } from "../../utils/adminApi";
 import PageMotion from "../../components/motion/PageMotion";
 import Reveal from "../../components/motion/Reveal";
 import { FaArrowLeft, FaTrash, FaUpload, FaTimes } from "react-icons/fa";
@@ -182,7 +182,7 @@ const EditPost = () => {
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-2">Add New Files</label>
                 <div className="border-2 border-dashed border-gray-300 rounded-lg p-6">
-                  <input type="file" multiple onChange={handleFileChange} accept="image/*,video/*,.pdf,.docx,.xml" className="hidden" id="file-upload" />
+                  <input type="file" multiple onChange={handleFileChange} accept=".jpg,.jpeg,.png,.webp,.pdf,.mp4,image/jpeg,image/png,image/webp,application/pdf,video/mp4" className="hidden" id="file-upload" />
                   <label htmlFor="file-upload" className="flex flex-col items-center justify-center cursor-pointer">
                     <FaUpload className="text-4xl text-gray-400 mb-2" />
                     <span className="text-sm text-gray-600">Click to upload or drag and drop</span>

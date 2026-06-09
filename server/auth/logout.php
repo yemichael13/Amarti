@@ -1,11 +1,10 @@
 <?php
-session_start();
-$_SESSION = [];
-session_destroy();
+require __DIR__ . '/../config/session.php';
+require __DIR__ . '/../config/cors.php';
 
-$origin = $_SERVER['HTTP_ORIGIN'] ?? 'http://localhost:5173';
-header("Access-Control-Allow-Origin: $origin");
-header("Access-Control-Allow-Credentials: true");
-header("Content-Type: application/json");
+initSession();
+setCorsHeaders(['POST', 'OPTIONS']);
 
-echo json_encode(["success" => true]);
+destroySession();
+
+echo json_encode(['success' => true]);

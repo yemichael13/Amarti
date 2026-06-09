@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import Seo from "../components/Seo";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Fish from "../assets/smartaqua.webp";
@@ -67,6 +68,11 @@ const cardVariants = {
 const Services = () => {
   return (
     <div>
+      <Seo
+        title="Our Services"
+        description="Explore Aamaartii PLC services: smart aquaculture, poultry, horticulture, eco-tourism, training, and circular bioeconomy solutions."
+        path="/services"
+      />
       <Navbar />
 
       {/* Green background header section */}

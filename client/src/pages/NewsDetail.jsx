@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
+import Seo from "../components/Seo";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import PageMotion from "../components/motion/PageMotion";
@@ -38,8 +39,19 @@ const NewsDetail = () => {
   const galleryFiles =
     post?.files?.filter((f) => !heroImage || f.id !== heroImage.id) || [];
 
+  const seoImage = heroImage ? getFileUrl(heroImage.file_path) : undefined;
+
   return (
     <div>
+      {post && (
+        <Seo
+          title={post.title}
+          description={post.excerpt || post.title}
+          path={`/news/${post.slug}`}
+          image={seoImage}
+          type="article"
+        />
+      )}
       <Navbar />
 
       <PageMotion>
