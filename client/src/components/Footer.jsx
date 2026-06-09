@@ -20,20 +20,7 @@ function Footer() {
           <h3 className="font-serif text-gray-500 text-center px-4">
             Integrated Agricultural Production & Eco-Tourism
           </h3>
-          <div className="w-full px-4 md:px-0">
-            <h2 className="font-bold text-center text-lg md:text-xl">Subscribe to Newsletter</h2>
-            <div className="my-5 flex justify-center">
-              <input
-                type="email"
-                placeholder="Your Email"
-                className="border border-green-900 rounded-l-sm px-4 py-2 w-2/3 md:w-auto"
-              />
-              <button className="bg-green-900 border border-green-900 font-semibold text-white rounded-r-sm hover:bg-white hover:text-green-900 transition-colors duration-300 cursor-pointer px-4 py-2">
-                Subscribe
-              </button>
-            </div>
-          </div>
-        </div>
+      </div>
 
         {/* Right Column */}
         <div className="flex flex-col md:flex-row text-white py-10 md:py-20 my-5 md:my-0 md:mx-10 justify-between items-start md:items-center border-t-2 md:border-t-0 md:border-l-2 border-white gap-10 md:gap-20 w-full md:w-2/3 px-5 md:px-20">
